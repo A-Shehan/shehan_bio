@@ -15,8 +15,8 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #cfd0d4;
+            background: #0e0e10;
             padding: 0;
             margin: 0;
             overflow-x: hidden;
@@ -24,12 +24,13 @@
 
         /* Header styles */
         header {
-            background: #4a90e2;
-            color: #fff;
+            background: #1a1a1d;
+            color: #33ccff;
             padding: 2rem;
             text-align: center;
             position: relative;
             z-index: 1;
+            box-shadow: 0 0 20px rgba(51, 204, 255, 0.4);
         }
 
         header::before {
@@ -39,7 +40,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.4);
             z-index: -1;
         }
 
@@ -53,12 +54,13 @@
             width: 200px;
             height: auto;
             border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(51, 204, 255, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
         #my-photo img:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(51, 204, 255, 0.7);
         }
 
         /* Section styles */
@@ -66,9 +68,9 @@
             padding: 2rem;
             margin: 1rem auto;
             max-width: 1200px;
-            background: #fff;
+            background: #1a1a1d;
             border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
         }
@@ -80,7 +82,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: rgba(0, 0, 0, 0.05);
+            background: rgba(0, 255, 255, 0.03);
             border-radius: 50%;
             transform: rotate(-30deg);
             z-index: -1;
@@ -93,20 +95,20 @@
 
         /* About section styles */
         #about h2 {
-            color: #4a90e2;
+            color: #33ccff;
             text-align: center;
             margin-bottom: 1rem;
         }
 
         #about p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             text-align: center;
             line-height: 1.8;
         }
 
         /* Gallery styles */
         #gallery h2 {
-            color: #4a90e2;
+            color: #33ccff;
             text-align: center;
             margin-bottom: 1rem;
         }
@@ -121,12 +123,13 @@
         .gallery-item {
             flex: 1 1 calc(33.333% - 1rem);
             box-sizing: border-box;
-            background: #fff;
+            background: #0e0e10;
             border-radius: 10px;
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             max-width: 350px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
         }
 
         .gallery-item img {
@@ -137,22 +140,28 @@
 
         .gallery-item:hover {
             transform: scale(1.05);
-        }
-
-        .gallery-item p {
-            padding: 1rem;
-            color: #555;
+            box-shadow: 0 0 30px rgba(51, 204, 255, 0.4);
         }
 
         /* Footer styles */
         footer {
-            background: #4a90e2;
-            color: #fff;
+            background: #1a1a1d;
+            color: #33ccff;
             text-align: center;
             padding: 1rem;
             position: relative;
             z-index: 1;
             margin-top: 2rem;
+            box-shadow: 0 0 20px rgba(51, 204, 255, 0.4);
+        }
+
+        /* Glowing effect for texts */
+        h1, h2 {
+            text-shadow: 0 0 8px rgba(51, 204, 255, 0.8), 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+
+        p {
+            color: #b0b3b8;
         }
     </style>
 </head>
@@ -174,104 +183,81 @@
     <section id="gallery">
         <h2>My Projects</h2>
         <div class="gallery">
-            <!-- Adding all 23 images to the gallery -->
+            <!-- Adding all 23 images to the gallery without descriptions -->
             <div class="gallery-item">
                 <img src="images/1.jpg" alt="Project 1">
-                <p>Project 1 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/2.jpg" alt="Project 2">
-                <p>Project 2 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/3.jpg" alt="Project 3">
-                <p>Project 3 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/4.jpg" alt="Project 4">
-                <p>Project 4 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/5.jpg" alt="Project 5">
-                <p>Project 5 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/6.jpg" alt="Project 6">
-                <p>Project 6 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/7.jpg" alt="Project 7">
-                <p>Project 7 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/8.jpg" alt="Project 8">
-                <p>Project 8 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/9.jpg" alt="Project 9">
-                <p>Project 9 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/10.jpg" alt="Project 10">
-                <p>Project 10 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/11.jpg" alt="Project 11">
-                <p>Project 11 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/12.jpg" alt="Project 12">
-                <p>Project 12 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/13.jpg" alt="Project 13">
-                <p>Project 13 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/14.jpg" alt="Project 14">
-                <p>Project 14 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/15.jpg" alt="Project 15">
-                <p>Project 15 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/16.jpg" alt="Project 16">
-                <p>Project 16 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/17.jpg" alt="Project 17">
-                <p>Project 17 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/18.jpg" alt="Project 18">
-                <p>Project 18 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/19.jpg" alt="Project 19">
-                <p>Project 19 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/20.jpg" alt="Project 20">
-                <p>Project 20 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/21.jpg" alt="Project 21">
-                <p>Project 21 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/22.jpg" alt="Project 22">
-                <p>Project 22 Description</p>
             </div>
             <div class="gallery-item">
                 <img src="images/23.jpg" alt="Project 23">
-                <p>Project 23 Description</p>
             </div>
         </div>
     </section>
-    
+
     <footer>
-        <p>© 2024 Sheahn. All rights reserved.</p>
+        <p>&copy; 2024 Shehan's Projects. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
