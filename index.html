@@ -43,6 +43,24 @@
             z-index: -1;
         }
 
+        /* Photo section */
+        #my-photo {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        #my-photo img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #my-photo img:hover {
+            transform: scale(1.1);
+        }
+
         /* Section styles */
         section {
             padding: 2rem;
@@ -142,6 +160,11 @@
     <header>
         <h1>Welcome to My Portfolio</h1>
     </header>
+
+    <!-- My photo section -->
+    <section id="my-photo">
+        <img src="images/my_photo.png" alt="My Photo">
+    </section>
     
     <section id="about">
         <h2>About Me</h2>
